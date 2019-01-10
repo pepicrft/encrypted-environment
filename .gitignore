@@ -8,3 +8,4 @@
 /tmp/
 .rubocop-http---shopify-github-io-ruby-style-guide-rubocop-yml
 .byebug_history
+*.gem
