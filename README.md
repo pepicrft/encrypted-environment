@@ -1,6 +1,7 @@
 # Encrypted enironment
 
 [![CircleCI](https://circleci.com/gh/pepibumur/encrypted-environment.svg?style=svg)](https://circleci.com/gh/pepibumur/encrypted-environment)
+[![codecov](https://codecov.io/gh/pepibumur/encrypted-environment/branch/master/graph/badge.svg)](https://codecov.io/gh/pepibumur/encrypted-environment)
 
 Ruby utility to load encrypted variables into the environment
 
