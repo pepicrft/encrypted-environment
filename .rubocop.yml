@@ -1,0 +1,16 @@
+inherit_from:
+  - http://shopify.github.io/ruby-style-guide/rubocop.yml
+
+Rails:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+AllCops:
+  TargetRubyVersion: 2.5
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  Exclude:
+    - vendor/**/*
+    - bin/*
