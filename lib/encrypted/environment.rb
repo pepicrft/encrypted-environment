@@ -9,7 +9,6 @@ module Encrypted
   module Environment
     EnvironmentError = Class.new(StandardError)
     MissingEjson = Class.new(EnvironmentError)
-    MissingSecret = Class.new(EnvironmentError)
 
     def self.load_from_ejson(ejson_path, secrets_path: nil, private_key: nil)
       decrypt_environment(
@@ -51,8 +50,6 @@ module Encrypted
           secrets_path = Dir.mktmpdir
           should_delete = true
           File.write(File.join(secrets_path, public_key), private_key)
-        else
-          raise MissingSecret
         end
 
         yield(secrets_path)
